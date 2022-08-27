@@ -25,14 +25,14 @@ export const communities = [
    },
    {
       id: "5",
-      image: '/assets/cpp.avif',
-      name: "C/CPP Community",
+      image: '/assets/react.jpeg',
+      name: "Frontend Community",
       description: `Learn and help from each other. It doesn't matter from where you are learning, you can ask your doubts here. We all are here to help`,
    },
    {
       id: "6",
-      image: '/assets/cpp.avif',
-      name: "C/CPP Community",
+      image: '/assets/node.webp',
+      name: "Backend Community",
       description: `Learn and help from each other. It doesn't matter from where you are learning, you can ask your doubts here. We all are here to help`,
    },
 ];

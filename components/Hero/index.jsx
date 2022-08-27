@@ -3,7 +3,7 @@ import React from "react";
 import { communities } from "../../utils/constants";
 import CommunityLeaders from "../Community/CommunityLeaders";
 import CommunityTile from "../Community/CommunityTile";
-import {FaGithub, FaFacebookSquare, FaInstagram, FaWhatsapp} from 'react-icons/fa';
+import {AiOutlineCode} from 'react-icons/ai';
 
 const Hero = () => {
    return (
@@ -16,47 +16,24 @@ const Hero = () => {
                doubt and there are other fellow coders along with our team to
                solve your doubts.
             </p>
+            <div className="p-4 bg-background absolute -bottom-5 rounded-md flex items-center space-x-5 shadow-md">
+            <AiOutlineCode size="30px" />
+            <p>Coders Home</p>
+            </div>
          </div>
-         <div className="w-[100%] mt-5 flex flex-col md:flex-row">
-            <div className="w-[100%] lg:w-[70%] lg:ml-[35vw] flex justify-center flex-col items-center md:items-start md:px-10 lg:px-0">
-               <h1 className="text-2xl lg:text-3xl">Top Communities</h1>
-               <div className="mt-5 w-[66%] lg:mt-0">
+         <div className="w-[100%] mt-5 flex flex-col md:flex-row lg-h[100vh]">
+            <div className="w-[100%] px-10 lg:w-[70%] lg:ml-[35vw] flex justify-center flex-col items-center md:items-start md:px-10 lg:px-0">
+               <h1 className="text-2xl lg:text-3xl mb-5">Top Communities</h1>
+               <div className="mt-5 w-[100%] pr-10 lg:mt-0 flex flex-wrap justify-between">
                   {communities.map((community) => (
-                     <CommunityTile key={community.id} data={community} />
+                     <CommunityTile key={community.id} data={community} pg="half" />
                   ))}
-                  <p className="text-primary border-b-[1px] border-b-primary w-max cursor-pointer">
-                     Explore All The Communities
-                  </p>
                </div>
+               <button className="bg-bgSecondary px-8 py-2 rounded-md hover:bg-textPrimary hover:text-white">Join the community now</button>
             </div>
-            <div className="w-[90%] lg:w-[50%] mx-auto h-[80vh] bg-background rounded-l-xl p-2 my-10 lg:m-0">
-               <div className="border-bgSecondary border-2 h-[100%] flex flex-col rounded-l-xl items-center py-5">
-                  <h1 className="text-2xl font-Aboreto mb-4">
-                     Community Leader
-                  </h1>
-                  <Image
-                     src="/assets/p-1.jpeg"
-                     height="200px"
-                     width="190rem"
-                     alt="user_image"
-                     className="object-cover rounded-lg"
-                  />
-                  <h2 className="text-lg mt-10">Mr. Dwayne Jhonson</h2>
-                  <p className="font-Lato mx-5">
-                     We Have Created Codercommunity To Make Greast Programmers
-                     Community in the world, You Can Network, Collab, Join
-                     Hackthon, Find Open Source Projects Inside CoderCommunity
-                  </p>
-                  <div className="flex space-x-10 mt-10">
-                     <FaGithub size="25px" className="cursor-pointer" />
-                     <FaFacebookSquare size="25px" className="cursor-pointer" />
-                     <FaInstagram size="25px" className="cursor-pointer" />
-                     <FaWhatsapp size="25px" className="cursor-pointer" />
-                  </div>
-               </div>
-            </div>
+            
          </div>
-         <div className="px-5">
+         <div className="px-5 mt-10">
             <h1>Community Members</h1>
             <CommunityLeaders />
          </div>
