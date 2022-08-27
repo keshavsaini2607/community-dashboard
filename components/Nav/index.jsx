@@ -32,7 +32,7 @@ const Navbar = () => {
                <Link href="/explore">
                   <li
                      className={`cursor-pointer  ${
-                        router.pathname === "/explore"
+                        router.pathname.includes("explore")
                            ? "text-black font-bold"
                            : "text-gray-400"
                      }`}

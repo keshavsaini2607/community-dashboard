@@ -1,7 +1,7 @@
 import React from 'react'
-import Navbar from '../components/Nav'
-import { communities } from '../utils/constants';
-import CommunityTile from '../components/Community/CommunityTile';
+import Navbar from '../../components/Nav'
+import { communities } from '../../utils/constants';
+import CommunityTile from '../../components/Community/CommunityTile';
 
 const Explore = () => {
   return (

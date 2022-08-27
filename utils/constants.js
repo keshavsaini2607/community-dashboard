@@ -20,7 +20,7 @@ export const communities = [
    {
       id: "4",
       image: '/assets/cpp.avif',
-      name: "C/CPP Community",
+      name: "CPP Community",
       description: `Learn and help from each other. It doesn't matter from where you are learning, you can ask your doubts here. We all are here to help`,
    },
    {
@@ -110,3 +110,18 @@ export const testimonials = [
       image: "/assets/p-4.jpeg",
    },
 ];
+
+export const communityTabs = [
+   {
+      id: '1',
+      title: "General"
+   },
+   {
+      id: '2',
+      title: "Doubt Solving"
+   },
+   {
+      id: '3',
+      title: "Premium"
+   }
+]
