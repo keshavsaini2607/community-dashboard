@@ -1,8 +1,20 @@
 import Image from "next/image";
 import Link from "next/link";
-import React from "react";
+import React, { useEffect, useState } from "react";
+import { BiUpvote } from "react-icons/bi";
 
-const CommunityTile = ({ data, pg }) => {
+const CommunityTile = ({data, pg}) => {
+   const [votes, setVotes] = useState(0);
+
+   useEffect(() => {
+      let attached = true;
+
+      if(attached) {
+         let v = Math.ceil(Math.random() * 100)
+         setVotes(v);
+      }
+   },[])
+
    return (
       <Link href={`/explore/${data.name}`}>
          <div
@@ -25,6 +37,10 @@ const CommunityTile = ({ data, pg }) => {
                >
                   {data.description}
                </p>
+            </div>
+            <div className="flex items-center flex-col">
+               <BiUpvote size="25px" className="cursor-pointer" />
+               <p>{votes}</p>
             </div>
          </div>
       </Link>

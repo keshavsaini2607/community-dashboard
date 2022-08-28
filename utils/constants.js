@@ -1,37 +1,37 @@
 export const communities = [
    {
       id: "1",
-      image: '/assets/js.jpeg',
+      image: "/assets/js.jpeg",
       name: "Javascript Community",
       description: `Learn and help from each other. It doesn't matter from where you are learning, you can ask your doubts here. We all are here to help`,
    },
    {
       id: "2",
-      image: '/assets/py.jpeg',
+      image: "/assets/py.jpeg",
       name: "Pyhton Community",
       description: `Learn and help from each other. It doesn't matter from where you are learning, you can ask your doubts here. We all are here to help`,
    },
    {
       id: "3",
-      image: '/assets/java.jpeg',
+      image: "/assets/java.jpeg",
       name: "Java Community",
       description: `Learn and help from each other. It doesn't matter from where you are learning, you can ask your doubts here. We all are here to help`,
    },
    {
       id: "4",
-      image: '/assets/cpp.avif',
+      image: "/assets/cpp.avif",
       name: "CPP Community",
       description: `Learn and help from each other. It doesn't matter from where you are learning, you can ask your doubts here. We all are here to help`,
    },
    {
       id: "5",
-      image: '/assets/react.jpeg',
+      image: "/assets/react.jpeg",
       name: "Frontend Community",
       description: `Learn and help from each other. It doesn't matter from where you are learning, you can ask your doubts here. We all are here to help`,
    },
    {
       id: "6",
-      image: '/assets/node.webp',
+      image: "/assets/node.webp",
       name: "Backend Community",
       description: `Learn and help from each other. It doesn't matter from where you are learning, you can ask your doubts here. We all are here to help`,
    },
@@ -113,15 +113,50 @@ export const testimonials = [
 
 export const communityTabs = [
    {
-      id: '1',
-      title: "General"
+      id: "1",
+      title: "General",
    },
    {
-      id: '2',
-      title: "Doubt Solving"
+      id: "2",
+      title: "Doubt Solving",
    },
    {
-      id: '3',
-      title: "Premium"
-   }
-]
+      id: "3",
+      title: "Premium",
+   },
+];
+
+export const conversations = [
+   {
+      id: "1",
+      name: "Jhon Dow",
+      time: "3h Ago",
+      postImage: "",
+      postTitle: "28th August mock interview question jsbootcamp",
+      postDescription: `Q. Extract all the items of the array with datatypes of string - [5, true, "hitesh", 6, "Shubham", false, "Anurag"] \n
+
+      const arr = [5, true, "hitesh", 6, "Shubham", false, "Anurag"]; const myArr = arr.filter((e) => {if (typeof e === "string") {return e;} }); console.log(myArr);
+      
+      \n output - [ 'hitesh', 'Shubham', 'Anurag' ]`,
+   },
+   {
+      id: "1",
+      name: "Saara",
+      time: "8h Ago",
+      postImage: "https://pensil-social.s3.ap-south-1.amazonaws.com/storage/images/000c8c90-bf97-4e03-92d2-dbdddc771159.png",
+      postTitle: "Markdown doubt",
+      postDescription: ``,
+   },
+   {
+      id: "1",
+      name: "Jimmy a",
+      time: "12h Ago",
+      postImage: "",
+      postTitle: "JavaScript Array Methods",
+      postDescription: `JavaScript Array Methods
+      Explained in detailed
+      What are Arrays?
+      
+      JavaScript Array Syntax`,
+   },
+];
