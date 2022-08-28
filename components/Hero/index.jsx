@@ -4,8 +4,10 @@ import { communities } from "../../utils/constants";
 import CommunityLeaders from "../Community/CommunityLeaders";
 import CommunityTile from "../Community/CommunityTile";
 import {AiOutlineCode} from 'react-icons/ai';
+import { useRouter } from "next/router";
 
 const Hero = () => {
+   const router = useRouter();
    return (
       <div>
          <div className="hidden w-[30%] bg-secondary p-12 lg:flex justify-center flex-col items-center h-[80vh] rounded-3xl absolute -top-[5%] -left-[3%] -z-50 ">
@@ -29,7 +31,9 @@ const Hero = () => {
                      <CommunityTile key={community.id} data={community} pg="half" />
                   ))}
                </div>
-               <button className="bg-bgSecondary px-8 py-2 rounded-md hover:bg-textPrimary hover:text-white">Join your community now</button>
+               <button 
+               onClick={() => router.push('/explore')}
+               className="bg-bgSecondary px-8 py-2 rounded-md hover:bg-textPrimary hover:text-white">Join your community now</button>
             </div>
             <div className=" hidden md:block md:w-[60%] lg:w-[40%] md:rounded-l-xl md:h-[70vh]">
                <Image 
