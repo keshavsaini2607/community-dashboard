@@ -8,7 +8,7 @@ import {AiOutlineCode} from 'react-icons/ai';
 const Hero = () => {
    return (
       <div>
-         <div className="hidden w-[30%] bg-secondary p-10 lg:flex justify-center flex-col items-center h-[80vh] rounded-3xl absolute -top-[5%] -left-[3%] -z-50 ">
+         <div className="hidden w-[30%] bg-secondary p-12 lg:flex justify-center flex-col items-center h-[80vh] rounded-3xl absolute -top-[5%] -left-[3%] -z-50 ">
             <h1 className="font-Aboreto pl-4 lg:text-3xl lg:mt-8 xl:text-5xl">Coder Community</h1>
             <p className="p-6 font-Lato">
                Welcome to coder community. You might be learning from any place,
