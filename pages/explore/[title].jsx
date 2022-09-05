@@ -10,6 +10,7 @@ import {
 } from "react-icons/fa";
 import Image from "next/image";
 import Head from "next/head";
+import Chat from "../../components/Chat";
 
 const ExploreCommunity = () => {
    const router = useRouter();
@@ -26,7 +27,6 @@ const ExploreCommunity = () => {
          </div>
       );
    };
-   console.log({ selectedChannel });
    return (
       <div className="overflow-x-hidden">
       <Head>
@@ -40,7 +40,7 @@ const ExploreCommunity = () => {
                {router.query.title}
             </h1>
          </div>
-         <div className="flex flex-col pb-10 lg:flex-row">
+         <div className="flex flex-col pb-10 lg:flex-row h-[80vh] ">
             <div className="px-8 py-5 lg:px-16 md:px-10 md:py-5 w-[95%] lg:w-[60%]">
                {communityTabs.map((tab) => (
                   <Tab key={tab.id} title={tab.title} />
@@ -48,7 +48,7 @@ const ExploreCommunity = () => {
             </div>
             {!selectedChannel ? (
                <div
-                  className="w-[95%] lg:w-[40%] mx-auto h-[70vh] bg-background 
+                  className="w-[95%] lg:w-[40%] mx-auto h-[60vh] bg-background 
             rounded-l-xl p-2 my-10 lg:m-0 lg:absolute lg:right-0"
                >
                   <div className="border-bgSecondary border-2 h-[100%] flex flex-col rounded-l-xl items-center py-5">
@@ -82,43 +82,12 @@ const ExploreCommunity = () => {
                </div>
             ) : (
                <div
-                  className="w-[95%] lg:w-[40%] mx-auto bg-background 
-            rounded-l-xl p-2 my-10 lg:m-0 lg:absolute lg:right-0"
+                  className="w-[95%] lg:w-[40%] mx-auto"
                >
-                  <div className="border-bgSecondary border-2 h-[100%] flex flex-col rounded-l-xl items-center py-5">
-                     <div className="flex items-center justify-between w-[100%] px-5 mb-5">
-                        <h1 className="text-2xl">{selectedChannel}</h1>
-                        <h1 className="cursor-pointer" onClick={() => setSelectedChannel("")}>Close Group</h1>
-                     </div>
-                     <div className="flex items-center justify-between w-[100%] px-5">
-                        <h1>All Conversations</h1>
-                        <h1>Filter</h1>
-                     </div>
-                     <div className="flex flex-col ml-8 space-y-8 mt-5 items-start w-[100%] ">
-                        {conversations.map((convo) => (
-                           <div
-                              key={convo.id}
-                              className="bg-gray-400 p-2 w-[90%]"
-                           >
-                              <div className="flex space-x-3">
-                                 <p>{convo.name} .</p>
-                                 <p>{convo.time}</p>
-                              </div>
-                              <div className="flex flex-col space-y-2">
-                                 <p>{convo.postTitle}</p>
-                                 {convo.postImage && (
-                                    <img
-                                       src={convo.postImage}
-                                       className="w-[90%] mt-2"
-                                       alt="question"
-                                    />
-                                 )}
-                                 <p>{convo.postDescription}</p>
-                              </div>
-                           </div>
-                        ))}
-                     </div>
-                  </div>
+                  <Chat 
+                     selectedChannel={selectedChannel}
+                     setSelectedChannel={setSelectedChannel}
+                  />
                </div>
             )}
          </div>

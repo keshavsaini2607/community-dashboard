@@ -1,9 +1,12 @@
 import "../styles/globals.css";
+import {StoreProvider} from "../shared";
 
 function MyApp({ Component, pageProps }) {
    return (
       <div className="">
-         <Component {...pageProps} />
+         <StoreProvider>
+             <Component {...pageProps} />
+         </StoreProvider>
       </div>
    );
 }

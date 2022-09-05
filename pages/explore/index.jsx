@@ -23,6 +23,7 @@ const Explore = () => {
                      key={community.id}
                      data={community}
                      pg="full"
+                     edit={false}
                   />
                ))}
             </div>

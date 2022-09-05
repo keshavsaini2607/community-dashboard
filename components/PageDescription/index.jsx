@@ -4,7 +4,7 @@ import React from "react";
 const PageDescription = () => {
    const router = useRouter();
    return (
-      <div className="p-5 mt-10 bg-background flex flex-col">
+      <div className="py-5 px-20 mt-10 bg-background flex flex-col">
          <h1 className="text-3xl text-center md:text-start">👋 Welcome to the Pensil community</h1>
          <p className=" font-Lato text-lg px-10 pt-3 text-center md:text-start">
             {`Makers like you join together in the Pensil community to connect and

@@ -3,7 +3,7 @@ import Link from "next/link";
 import React, { useEffect, useState } from "react";
 import { BiUpvote } from "react-icons/bi";
 
-const CommunityTile = ({data, pg}) => {
+const CommunityTile = ({data, pg, edit}) => {
    const [votes, setVotes] = useState(0);
 
    useEffect(() => {
@@ -38,10 +38,14 @@ const CommunityTile = ({data, pg}) => {
                   {data.description}
                </p>
             </div>
-            <div className="flex items-center flex-col">
-               <BiUpvote size="25px" className="cursor-pointer" />
-               <p>{votes}</p>
-            </div>
+            {
+               !edit && (
+                    <div className="flex items-center flex-col">
+                       <BiUpvote size="25px" className="cursor-pointer" />
+                       <p>{votes}</p>
+                    </div>
+                )
+            }
          </div>
       </Link>
    );
