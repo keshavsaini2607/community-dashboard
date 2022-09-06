@@ -3,7 +3,7 @@ import Faq from '.'
 
 const FaqSection = () => {
   return (
-    <div className='px-20 mt-20 pb-10'>
+    <div className='px-10 md:px-20 mt-20 pb-10'>
         <h1 className='text-lg text-primary mb-5'>Frequently asked about the community</h1>
         <h1 className='text-3xl'>FAQ</h1>
         <div className='mt-10'>
