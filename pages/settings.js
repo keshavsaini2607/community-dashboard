@@ -49,7 +49,7 @@ const Settings = () => {
                  <h1 className="text-3xl">Editing not enabled on smaller devices</h1>
              </div>
             <div className="hidden lg:flex justify-between items-start mt-10">
-               <div className="w-[40%] border-[1px] border-background p-4 min-h-[40vh]">
+               <div className="w-[40%] border-[1px] border-background p-4 min-h-[50vh]">
                   <p className="text-xl mb-5">Dashboard</p>
                   {!editMode && (
                      <div className="flex flex-col items-start">
@@ -84,7 +84,7 @@ const Settings = () => {
                        <HeroCommunities setEditMode={setEditMode} />
                    ) : null}
                </div>
-               <div className="w-[60%] border-[1px] border-background p-4 min-h-[40vh]">
+               <div className="w-[60%] border-[1px] border-background p-4 min-h-[50vh]">
                   {editMode == "text" && (
                      <div>
                         <div className={`w-[60%] p-12 lg:flex justify-center flex-col items-center h-[80vh] rounded-3xl`} style={{background: heroText.bgColor}}>

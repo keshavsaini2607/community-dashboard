@@ -5,8 +5,8 @@ const PageDescription = () => {
    const router = useRouter();
    return (
       <div className="py-5 px-20 mt-10 bg-background flex flex-col">
-         <h1 className="text-3xl text-center md:text-start">👋 Welcome to the Pensil community</h1>
-         <p className=" font-Lato text-lg px-10 pt-3 text-center md:text-start">
+         <h1 className="text-3xl text-center md:text-start">Welcome to the Pensil community 🚀</h1>
+         <p className=" font-Lato text-lg pt-3 text-center md:text-start">
             {`Makers like you join together in the Pensil community to connect and
             encourage one another, receive answers to critical questions, and
             develop vibrant communities. You'll also get early access to feature

@@ -22,6 +22,11 @@ export default function Home() {
             <Testimonials />
             <FaqSection />
          </main>
+          <footer className="p-4 flex items-center justify-center">
+              <span>
+                  Made With ❤️ By Keshav Saini
+              </span>
+          </footer>
       </div>
    );
 }

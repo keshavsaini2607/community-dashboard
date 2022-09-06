@@ -1,6 +1,7 @@
 import React from "react";
 import { faqs } from "../../utils/constants";
 
+
 const Faq = () => {
    return (
       <div className="bg-white border border-gray-200 divide-y divide-gray-200 rounded-xl">
