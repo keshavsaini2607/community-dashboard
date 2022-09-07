@@ -4,9 +4,9 @@ import {ImQuotesLeft} from 'react-icons/im';
 
 const TestimonialCard = ({data}) => {
    return (
-      <div className="bg-bgSecondary p-4 w-[95%] md:w-[40%] lg:w-[28%] xl:w-[30%] rounded-md mr-10 mt-5 flex flex-col justify-between">
+      <div className="bg-bgSecondary p-4 w-[100%] md:w-[40%] lg:w-[28%] xl:w-[30%] rounded-md md:mr-10 mt-5 flex flex-col justify-between">
          <ImQuotesLeft size="30px" className="text-white mb-3" />
-          <p className="font-Lato">
+          <p className="font-Lato text-primary">
             {data.comment}
          </p>
          <div className="mt-5">

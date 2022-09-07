@@ -109,6 +109,18 @@ export const testimonials = [
       comment: `"Love the slick minimalism and easy to use design on the community platform. It has everything one will need."`,
       image: "/assets/p-4.jpeg",
    },
+   {
+      id: "5",
+      name: "Sheri Staffiery",
+      comment: `"I like what i see. Pensil has neat sections for different topics and i can make them on my own. Plus in-built video tool is very useful"`,
+      image: "/assets/p-4.jpeg",
+   },
+   {
+      id: "6",
+      name: "Lalit Tyagi",
+      comment: `"I love Pensil, This is great. Good to see world class product coming from India. Keep growing"`,
+      image: "/assets/p-4.jpeg",
+   },
 ];
 
 export const communityTabs = [

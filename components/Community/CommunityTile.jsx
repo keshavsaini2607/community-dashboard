@@ -18,7 +18,7 @@ const CommunityTile = ({data, pg, edit}) => {
    return (
       <Link href={`/explore/${data.name}`}>
          <div
-            className={`flex items-center space-x-7 my-5 lg:mt-0 hover:bg-bgSecondary cursor-pointer p-4 ${
+            className={`flex items-center space-x-7 my-5 lg:my-7 md:p-4  lg:mt-0 hover:bg-bgSecondary cursor-pointer ${
                pg === "full" && "w-max md:w-1/2 lg:w-1/3"
             }`}
          >
@@ -29,7 +29,7 @@ const CommunityTile = ({data, pg, edit}) => {
                alt="Free Image"
                className="rounded-xl object-cover"
             />
-            <div className="w-1/3 lg:w-max">
+            <div className="w-1/2 lg:w-max mr-10">
                <h2 className="font-semibold">{data.name}</h2>
                <p
                   className="text-sm font-Lato lg:w-[130px] xl:w-[200px] md:w-[150px]"
@@ -40,7 +40,7 @@ const CommunityTile = ({data, pg, edit}) => {
             </div>
             {
                !edit && (
-                    <div className="flex items-center flex-col">
+                    <div className="flex items-center flex-col ml-10">
                        <BiUpvote size="25px" className="cursor-pointer" />
                        <p>{votes}</p>
                     </div>

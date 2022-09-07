@@ -27,9 +27,9 @@ const Hero = () => {
             </div>
          </div>
          <div className="w-[100%] mt-5 flex flex-col md:flex-row lg-h[100vh]">
-            <div className="w-[100%] px-10 lg:w-[70%] lg:ml-[35vw] flex justify-center flex-col items-center md:items-start md:px-10 lg:px-0">
+            <div className="w-[100%] px-10 lg:w-[70%] lg:ml-[35vw] flex justify-center flex-col items-center md:items-start">
                <h1 className="text-2xl lg:text-3xl mb-5">Top Communities</h1>
-               <div className="mt-5 md:pr-10 lg:mt-0 flex flex-col justify-between">
+               <div className="md:pr-10 lg:mt-0 flex flex-col justify-center md:justify-between">
                   {featured.map((community) => (
                      <CommunityTile
                         key={community.id}
@@ -46,11 +46,14 @@ const Hero = () => {
                   Join your community now
                </button>
             </div>
-            <div className=" hidden md:block md:w-[60%] lg:w-[40%] md:rounded-l-xl md:h-[70vh]">
+            <div className=" hidden md:block md:w-[60%] lg:w-[40%] md:rounded-l-xl md:h-[80vh]">
                <img
                   src={heroImage}
-                  width="1000px"
-                  height="1500px"
+                  style={{
+                     width: '100%',
+                     height: '100%',
+                     objectFit: 'cover'
+                  }}
                   alt="coder"
                   className="object-cover rounded-l-xl"
                />

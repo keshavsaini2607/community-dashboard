@@ -44,11 +44,11 @@ const Settings = () => {
             <h1 className="text-3xl font-Aboreto md:text-5xl">
                Customize your dashboard
             </h1>
-             <div className="flex lg:hidden justify-center mt-10 flex-col items-center">
+             <div className="flex md:hidden justify-center mt-10 flex-col items-center">
                  <Image src="/assets/404.svg" height="200px" width="200px" alt="404" />
                  <h1 className="text-3xl">Editing not enabled on smaller devices</h1>
              </div>
-            <div className="hidden lg:flex justify-between items-start mt-10">
+            <div className="hidden md:flex justify-between items-start mt-10">
                <div className="w-[40%] border-[1px] border-background p-4 min-h-[50vh]">
                   <p className="text-xl mb-5">Dashboard</p>
                   {!editMode && (
@@ -102,8 +102,11 @@ const Settings = () => {
                      <div className=" hidden md:block md:w-[60%] lg:w-[40%] md:rounded-l-xl md:h-[70vh]">
                         <img
                            src={heroImage}
-                           width="1000px"
-                           height="1500px"
+                           style={{
+                              width: '100%',
+                              height: '100%',
+                              objectFit: 'cover'
+                           }}
                            alt="coder"
                            className="object-cover rounded-l-xl"
                         />
